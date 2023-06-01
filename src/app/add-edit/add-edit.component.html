@@ -1,0 +1,88 @@
+<div mat-dialog-title>
+    <h1>Zaposleni Forma</h1>
+</div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<div mat-dialog-content class="content">
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Ime</mat-label>
+            <input matInput type="text" placeholder="" formControlName="firstName">
+            <div *ngIf="empForm && empForm.controls['firstName'] && empForm.controls['firstName'].invalid">
+            </div>
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Prezime</mat-label>
+            <input matInput type="text" placeholder="" formControlName="lastName">
+            <div *ngIf="empForm && empForm.controls['lastName'] && empForm.controls['lastName'].invalid">
+            </div>
+          </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="text" placeholder="Primjer jalan@gmail.com" formControlName="email">
+            <div *ngIf="empForm && empForm.controls['email'] && empForm.controls['email'].invalid">
+            </div>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Datum rođenja</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dob">
+            <div *ngIf="empForm && empForm.controls['dob'] && empForm.controls['dob'].invalid && empForm.controls['dob'].touched">
+            </div>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div>
+
+    <div class="gender">
+      <mat-label> <b> Spol </b> </mat-label>
+      <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-radio-button value="male">Musko</mat-radio-button>
+        <mat-radio-button value="female">Žensko</mat-radio-button>
+        <mat-radio-button value="others">Ostalo</mat-radio-button>
+      </mat-radio-group>
+      <div *ngIf="empForm && empForm.controls['gender'] && empForm.controls['gender'].invalid && empForm.controls['gender'].touched">
+      </div>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Edukacija</mat-label>
+        <mat-select formControlName="education">
+          <mat-option *ngFor="let val of education" [value]="val">
+            {{val}}
+          </mat-option>
+          <mat-error *ngIf="empForm.get('education')?.invalid && empForm.get('education')?.touched">
+          </mat-error>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Kompanija</mat-label>
+        <input matInput type="text" placeholder="" formControlName="company">
+        <div *ngIf="empForm && empForm.controls['company'] && empForm.controls['company'].invalid ">
+        </div>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Radni staž</mat-label>
+        <input matInput type="number, string" placeholder="" formControlName="experience">
+        <div *ngIf="empForm && empForm.controls['experience'] && empForm.controls['experience'].invalid ">
+        </div>
+      </mat-form-field>
+    </div>
+    
+
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false"> Odustani </button>
+    <button mat-raised-button color="primary" type="submit"> {{data? "Ažuriraj" : "Spremi"}} </button>
+</div>
+
+</form>

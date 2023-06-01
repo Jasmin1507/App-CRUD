@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Jasmin ",
+      "lastName": "Teskeredzic",
+      "email": "jalan1507@gmail.com",
+      "dob": "1997-07-14T22:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "Facebook",
+      "experience": 3,
+      "id": 5
+    },
+    {
+      "firstName": "Omer",
+      "lastName": "Teskeredzic",
+      "email": "omer1122@gmail.com",
+      "dob": "1994-06-08T22:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "Amazon",
+      "experience": 6,
+      "id": 6
+    },
+    {
+      "firstName": "Alma",
+      "lastName": "Teskeredžić",
+      "email": "almaalma1996@yahoo.com",
+      "dob": "1996-04-17T22:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "Google",
+      "experience": 3,
+      "id": 7
+    },
+    {
+      "firstName": "Ivana",
+      "lastName": "Antic",
+      "email": "ivana1994@outlook.com",
+      "dob": "1994-07-17T22:00:00.000Z",
+      "gender": "female",
+      "education": "Graduate",
+      "company": "Peko",
+      "experience": 8,
+      "id": 8
+    },
+    {
+      "firstName": "Fatima",
+      "lastName": "Teskeredzic ex.Calkic",
+      "email": "fatima66@gmail.com",
+      "dob": "1978-04-04T23:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "Facebook",
+      "experience": 15,
+      "id": 9
+    },
+    {
+      "firstName": "Samir",
+      "lastName": "Teskeredzic",
+      "email": "samir_211@yahoo.de",
+      "dob": "1970-02-28T23:00:00.000Z",
+      "gender": "male",
+      "education": "Intermediate",
+      "company": "Halfinger",
+      "experience": 6,
+      "id": 10
+    },
+    {
+      "firstName": "Melisa",
+      "lastName": "Elezovic ex.Calkic",
+      "email": "melisaa1@gmail.com",
+      "dob": "1988-07-12T22:00:00.000Z",
+      "gender": "female",
+      "education": "Post Graduate",
+      "company": "Med Lab",
+      "experience": 5,
+      "id": 11
+    }
+  ]
+}

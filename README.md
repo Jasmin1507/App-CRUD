@@ -12,7 +12,7 @@ This is a project I created using material UI (Angular 15), and JSON server.
 -Json fake server
 
 First install JSON server fake RESTAPI with command in terminal `npm i -g json-server`.
-Then also in that same terminal run `json-server --watch db.json` and add another array in your new created 'db.json' ` "employees": []; `.
+Then run `json-server --watch db.json` and add another array in your new created 'db.json' ` "employees": []; `.
 The data (json) you entered is on port 3000 : `http://localhost:3000/`,
 and employees data is on `http://localhost:3000/employees`.
 

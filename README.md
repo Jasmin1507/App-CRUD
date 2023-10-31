@@ -21,17 +21,10 @@ Type the command `npm install` and after that `ng serve`.
 # About the project: 
 
 This is my first project in Angular, since I am a front-end developer,
-I used a fake REST API and thus imitated the back-end for creating demo API.
-I also used Angular Material UI so the app is responsive on different devices.
+I used a fake REST API and imitated the back-end for creating demo API.
 This type of application includes basic operations - creating (Create), reading (Read),
 updating (Update) and deleting (Delete) employee data.
 This CRUD application for employees makes it easier for organizations to effectively manage information about their employees, 
 improves security and control, and provides quick and easy access to relevant information.
 
-# What I implement:
--Viewing and filtering: I enabled users to view all employees with the ability to filter and sort by different attributes.
--Adding employees: I enabled users to add new employees to the system via the data entry form, 
-with correctness check and validation of the entered data.
--Editing Employee Information: Users can update employee information, including changes to contact information.
--Deleting an employee: Users can delete an employee's profile from the system by displaying a confirmation or confirmation prompt before deletion.
 - ...

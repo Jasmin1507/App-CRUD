@@ -20,7 +20,7 @@ Type the command `npm install` and after that `ng serve`.
 
 # About the project: 
 
-This is my first project in Angular, since I am a front-end developer,
+This is my first project in Angular,
 I used a fake REST API and imitated the back-end for creating demo API.
 This type of application includes basic operations - creating (Create), reading (Read),
 updating (Update) and deleting (Delete) employee data.
